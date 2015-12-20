@@ -48,11 +48,11 @@ public class CommunicationManager {
 
     }
     private void sendGetInServiceNotification(Beacon beacon) {
-        sendSMS("05452879744", studentList.getStudentName(beacon) + " servise bindi. BeaconId:" + beacon.getId());
+        sendSMS("yourNumber", studentList.getStudentName(beacon) + " servise bindi. BeaconId:" + beacon.getId());
     }
 
     private void sendGetOutServiceNotification(final Beacon beacon) {
-        sendSMS("05452879744", studentList.getStudentName(beacon) + " servisten indi. BeaconId" + beacon.getId());
+        sendSMS("yourNumber", studentList.getStudentName(beacon) + " servisten indi. BeaconId" + beacon.getId());
     }
 
     private void sendSMS(String phoneNumber, String message) {
